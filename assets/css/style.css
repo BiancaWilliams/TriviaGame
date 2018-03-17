@@ -1,0 +1,36 @@
+
+body, html {
+  height: 100%;
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.575);
+  text-align: left;
+}
+#container {
+
+  background: rgba(250, 1, 188, 0.055);
+  left: 50%;
+  transform: translateX(-50%);
+  position: relative;
+}
+
+h1 {
+  border-bottom: rgb(249, 247, 253) dashed 1px;
+
+}
+h1, h2, p {
+  text-align: center;
+ }
+

@@ -1,12 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <head>
+     <html lang="en">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Trivia Game</title>
+<!-- Added link to the jQuery library -->
+<script href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Added a link to Bootstrap-->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet"
+   integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+   crossorigin="anonymous">
+
+<!-- LOCAL CSS FILE-->
+  <link type="text/css" rel="stylesheet" href="assets/css/style.css">
+    </head>
+
+    <body>
+        <div id="container">
+          <header>
+            <h1> Disco Trivia </h1>
+                <h2>How Much Do You Know About 70's Hits?<br>
+                Take This Quiz and Find Out!</h2>
+                <p>In this trivia game there are 8 questions with true/false options.</p>
+                <p>You will have a limited amount of time to finish the quiz. Good luck!</p>
+        </header>
+        <section>
+            <input type="submit" value= "Start"">
+            <div id="results"></div>    
+            <form name="quiz" onsubmit="return submitAnswers ()">
+                <h3>1: Who sang the 1978 hit, YMCA? </h3>
+                 <input type="radio" name="q1" value="a"id="q1a">a.The Village Idiots<br>
+                 <input type="radio" name="q2" value="b"id="q2b">b.The Angry Villiager<br>
+                 <input type="radio" name="q3" value="c"id="q3c">c.The Villiage People<br>
+                 <input type="radio" name="q4" value="d"id="q4d">d.The Villiagers<br>
+
+                <h3>2: Which soul singing diva won a Best Soul Gospel Performance Grammy 1972 for
+                Amazing Grace? </h3>
+                 <input type="radio" name="q1" value="a"id="q1a">a.Aretha Franklin<br>
+                 <input type="radio" name="q2" value="b"id="q2b">b.Roberta Flack<br>
+                 <input type="radio" name="q3" value="c"id="q3c">c.Donna Summers<br>
+                 <input type="radio" name="q4" value="d"id="q4d">d.Shaka Khan<br>
+
+                <h3>3: Which Stevie Wonder album garnered Album of the Year at the 1976 Grammy
+                Awards?</h3>
+                 <input type="radio" name="q1" value="a"id="q1a">a.Songs in the Key of Life <br>
+                 <input type="radio" name="q2" value="b"id="q2b">b.Signed, Sealed and Delivered <br>
+                 <input type="radio" name="q3" value="c"id="q3c">c.Innervisions<br>
+                 <input type="radio" name="q4" value="d"id="q4d">d.Somewhere OVer the Rainbow<br>
+                
+                <h3>4: Donna Summers sang this hit:</h3>
+                 <input type="radio" name="q1" value="a"id="q1a">a.You Light Up My Life<br>
+                 <input type="radio" name="q2" value="b"id="q2b">b.Le Freak<br>
+                 <input type="radio" name="q3" value="c"id="q3c">c.Hot Stuff<br>
+                 <input type="radio" name="q4" value="d"id="q4d">d.You're So Vain<br>
+
+                <h3>5: Which song was not an Earth, Wind, and Fire original? </h3>
+                 <input type="radio" name="q1" value="a"id="q1a">a.September<br>
+                 <input type="radio" name="q2" value="b"id="q2b">b.Let's Groove<br>
+                 <input type="radio" name="q3" value="c"id="q3c">c.Stayin' Alive<br>
+                 <input type="radio" name="q4" value="d"id="q4d">d.Reasons;<br>
+
+                <h3>6:"The Hustle" made its debut in what year?</h3>
+                 <input type="radio" name="q1" value="a"id="q1a">a.1975<br>
+                 <input type="radio" name="q2" value="b"id="q2b">b.1971<br>
+                 <input type="radio" name="q3" value="c"id="q3c">c.1970<br>
+                 <input type="radio" name="q4" value="d"id="q4d">d.1973<br>
+
+                <h3>7: The Bee Gees sang this hit in 1977:</h3>
+                 <input type="radio" name="q1" value="a"id="q1a">a.Night Fever<br>
+                 <input type="radio" name="q2" value="b"id="q2b">b.Too Much Heaven<br>
+                 <input type="radio" name="q3" value="c"id="q3c">c.How Can You Mend A Broken Heart<br>
+                 <input type="radio" name="q4" value="d"id="q4d">d.Tragedy<br>
+
+                <h3>8: "After the Love Has Gone" was sang by:</h3>
+                 <input type="radio" name="q1" value="a"id="q1a">a.Earth Wind and Fire<br>
+                 <input type="radio" name="q2" value="b"id="q2b">b.Sister Sledge<br>
+                 <input type="radio" name="q3" value="c"id="q3c">c.Rick James<br>
+                 <input type="radio" name="q4" value="d"id="q4d">d.Bee Gees<br>
+                <br><br>
+                <input type="submit" value="Submit Answers">
+
+            </form>
+            </section> 
+        </div>
+<script src="assets/javascript/app.js"></script>
+
+</body >
 </html>
